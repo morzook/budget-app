@@ -35,28 +35,6 @@ body{
     }
        
   }
-
-  
-/* MOBILE PHONE POTRAIT */
-@media only screen and (max-width: 480px) { 
-
-  .container{
-    background-color: aliceblue;
-    width: 99%;
-    height: 99%;
-    padding: 5px;
-}
-
-.main-content{
-  width: 80%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-}
-
   
   
   .main-content{
@@ -79,6 +57,7 @@ body{
 
   .section-heading{
     text-transform: capitalize;
+    margin-top: 5px;
   }
   
   .budget-container{
@@ -98,30 +77,19 @@ body{
     flex-direction: column;
     justify-content: center;
     justify-content: space-around;
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    padding: 5px;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     width: 45%;
     height: 99%;
   }
-/* 
-  .exp-input-box{
-    border: 1px solid red;
-    width: 100%;
-  }
-   */
-  p{
-    margin: 0;
-    text-align: center;
-    width: 92%;
-  }
-  
   
   input{
     width: 95%;
     height: 25px;
-    margin-bottom: 5px;
-    margin-top: -10px;
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
     border: 1px solid #d0d0d0;
     border-radius: 3px;
   }
@@ -157,7 +125,7 @@ body{
     border: none;
     cursor: pointer;
     color: #ffffff;
-    margin-top: -5px;
+    margin-top: 5px;
   }
   
   
@@ -181,8 +149,14 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 5px;
-
+    margin-bottom: -10px;
   }
+
+  :placeholder-shown{
+    font-size: 12px;
+  }
+
+  place
   
   .budget, .expenses, .balance{
     /* margin-top: 10px; */
@@ -214,8 +188,7 @@ body{
   }
 
   .text-cont-heading{
-    text-align: center;
-    margin: 0;
+  visibility: hidden;
   }
   
   .text-container{
@@ -263,13 +236,203 @@ body{
     display: flex;
     justify-content: space-around;
   }
-/* 
-  .expenseAmount-styling{
-    width: 30%;
 
-  } */
-/*   
-  .table-icons{
-    width: 2px;
-    height: 2px;
-  } */
+ 
+/* MOBILE PHONE POTRAIT */
+@media only screen and (max-width: 480px) { 
+
+  .container{
+    background-color: aliceblue;
+    width: 99%;
+    height: 99%;
+    padding: 5px;
+}
+
+.main-content{
+  width: 99%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-column{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+
+}
+
+
+.section-heading{
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: -2px;
+  /* margin-top: -5px; */
+}
+
+.budget-container{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 95%;
+  height: 35%;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  border-radius: 0.3em;
+}
+
+.expenses-container{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  width: 95%;
+  height: 45%;
+}
+
+
+input{
+  width: 95%;
+  height: 20px;
+  /* margin-bottom: 5px; */
+  margin-top: -2px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+}
+
+.budget-container input:focus {
+  border: 1px solid #587ef4;
+}
+
+.calculate-btn{
+  text-transform: capitalize;
+  width:100px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #587ef4;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  /* margin-top: 5px; */
+}
+
+.expense-btn{
+  text-transform: capitalize;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #587ef4;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: -1px;
+}
+
+
+
+.bottom-column{
+  width: 99%;    
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.accounts-container{
+  background-color: #587ef4;
+  color: #ffffff;
+  border-radius: 0.3em;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: -30px;
+}
+
+.budget, .expenses, .balance{
+  /* margin-top: 10px; */
+  text-transform: capitalize;
+  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+  font-size: 13px;
+}
+
+#balance-icon{
+  margin-top: 10px;
+
+}
+
+.figures{
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+.text-cont-heading{
+  visibility: hidden;
+}
+
+.text-container{
+  margin-top: 50px;
+  height: fit-content;
+  margin-top: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  border-radius: 10px;
+}
+
+.budget-error, .exp-error{
+  background-color: red;
+}
+
+.hide{
+display: none;
+}
+
+.table-styling{
+  width: 98%;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expenseValue{
+  width: 50%;
+  text-align: start;
+  font-weight: 500;
+  color: #365537;
+
+}
+
+.costValue{
+  width: 20%;
+  text-align: start;
+  color: #686a72;
+}
+
+.recBtns{
+  width: 20%;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+}
