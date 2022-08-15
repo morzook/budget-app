@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugdet App</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+
+    <div class="write" id="write"></div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="top-column">
+                <div class="budget-container">
+                    <h3 class="section-heading">budget</h3>
+                    <p class="budget-error hide" id="budget-error">
+                        Value cannot be empty or negative
+                    </p>
+                    <input id='budget-amount' type="number" placeholder="ewfv ">
+                        <button class='calculate-btn'  >calculate</button>
+                </div>
+
+                <div class="expenses-container">
+                    <h3 class="section-heading">expenses</h3>
+                    <p class="exp-error hide" id="exp-error">
+                        can't be empty
+                    </p>
+                    <!-- <div class="exp-input-box"> -->
+                        <input id="expense-text" type="text" placeholder="pl">
+                        <input id="expense-amount" type="number" placeholder="p df">    
+                    <!-- </div> -->
+                        <button class='expense-btn'>add expenses</button>
+                </div>
+            </div>
+            <div class="bottom-column">
+                <div class="accounts-container">
+                    <div class="budget">
+                        <div class="h3">budget</div>
+                        <!-- <img class='icons' src="budget.PNG" alt="budget icon"> -->
+                        <h4 id='budget-h4' class="figures"></h4>
+                    </div>
+                    <div class="expenses">
+                        <div class="h3">expenses</div>
+                        <!-- <img class='icons' src="expenses.png" alt="expenses icon"> -->
+                        <h4 id='expense-h4' class="figures"></h4>
+                    </div>
+                    <div class="balance">
+                        <div class="h3">balance</div>
+                        <!-- <img id="balance-icon" class='icons' src="balance.png" alt="balance icon"> -->
+                        <h4 id='balance-h4' class="figures"></h4>
+                    </div>
+                </div>
+                <br>
+                <div class="text-cont-heading">heading</div>
+            <div id="text-container" class="text-container">
+               
+            </div>
+               
+               
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="budget.js"></script>
+</body>
+</html>
