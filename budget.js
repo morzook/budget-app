@@ -77,22 +77,18 @@ editButton.onclick = function(){
   document.getElementById('expense-text').value = expenseValue.innerText;
   document.getElementById('expense-amount').value = costValue.innerText;
   parentDiv.removeChild(records);
-
-  document.querySelector('.expense-btn').innerText = 'update'
-
         
   let tempExp = totalExpenses += -expenseAmount;
   expH4.innerText = tempExp;
   balance.innerText = budgetAmount - tempExp;
-  addExpBtn.innerText = 'Add expenses';
-  document.querySelector('.expense-btn').innerText = 'updtd'
+  document.querySelector('.expense-btn').innerText = 'update'
      }    
 
   deleteButton.onclick = function(){
- parentDiv.removeChild(records);
- let tempExp = totalExpenses += -expenseAmount;
- expH4.innerText = tempExp;
- balance.innerText = budgetAmount - tempExp;
+   parentDiv.removeChild(records);
+   let tempExp = totalExpenses += -expenseAmount;
+   expH4.innerText = tempExp;
+   balance.innerText = budgetAmount - tempExp;
       }
 
 if(expenseText == '' || expenseAmount == '' || expenseAmount < 0 ){
